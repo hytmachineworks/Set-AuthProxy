@@ -33,13 +33,10 @@ and make Set-AuthProxy dir and save Set-AuthProxy.psm1
 
 ### 4. edit your personal info to Set-AuthProxy.psm1
 
-$UserName = "username"
-
-$YourPassword = "password"
-
-$ProxyHostName = "ProxyHostName"
-
-$ProxyPortNo = "8080"
+>$UserName = "username"
+>$YourPassword = "password"
+>$ProxyHostName = "ProxyHostName"
+>$ProxyPortNo = "8080"
 
 
 ### 5. restart powershell and activate Set-AuthProxy automatically
