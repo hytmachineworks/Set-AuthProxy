@@ -16,6 +16,7 @@ open or make PowerShell_profile.ps1 by below command
 
 and write content below
 
+>import-module Set-AuthProxy
 >Set-AuthProxy
 
 and save and close PowerShell_profile.ps1
