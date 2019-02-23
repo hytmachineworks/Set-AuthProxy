@@ -2,6 +2,8 @@
 
 Proxy Authentication set credential info on PowerShell
 
+[Written in Japanese edition is here](https://hytmachineworks.hatenablog.com/entry/2019/02/23/140132)
+
 ## Usage
 
 ## 1. start powershell as administrator and do below command
