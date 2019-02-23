@@ -30,12 +30,12 @@ please check your module dir by below command
 >$env:PSModulePath
 ~~~
 
-and make Set-PSAuthProxy dir and save Set-AuthProxy.psm1
+and make Set-AuthProxy dir and save Set-AuthProxy.psm1
 
 Example
->\Your My Document\WindowsPowerShell\\**Modules\Set-PSAuthProxy\Set-AuthProxy.psm1**
+>\Your My Document\WindowsPowerShell\\**Modules\Set-AuthProxy\Set-AuthProxy.psm1**
 
-## 4. edit your personal info to Set-PSAuthProxy.psm1
+## 4. edit your personal info to Set-AuthProxy.psm1
 
 Please edit proxy host name, proxy port no, password and aes key file path.
 
@@ -72,9 +72,9 @@ and write content below
 
 and save and close PowerShell_profile.ps1
 
-## 5. restart powershell and activate Set-PSAuthProxy automatically
+## 5. restart powershell and activate Set-AuthProxy automatically
 
-First time start Set-PSAuthProxy, you don't have password and aes key files.
+First time start Set-AuthProxy, you don't have password and aes key files.
 
 ![Credential dialog image](./credential.png "Credential dialog")
 
