@@ -10,7 +10,19 @@ Proxy Authentication set credential info on PowerShell
 >Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ~~~
 
-## 2. install Set-AuthProxy.psm1
+## 2. make a PowerShell_profile.ps1
+
+open or make PowerShell_profile.ps1 by below command
+
+~~~ PowerShell
+>notepad $profile
+~~~
+
+maybe create file and dir on My Document
+
+>\Your My Document\\**WindowsPowerShell\PowerShell_profile.ps1**
+
+## 3. install Set-AuthProxy.psm1
 
 please check your module dir by below command
 
@@ -21,24 +33,7 @@ please check your module dir by below command
 and make Set-PSAuthProxy dir and save Set-AuthProxy.psm1
 
 Example
->$env:PSModulePath\Set-PSAuthProxy\Set-AuthProxy.psm1
-
-## 3. make a PowerShell_profile.ps1 and add Set-AuthProxy function
-
-open or make PowerShell_profile.ps1 by below command
-
-~~~ PowerShell
->notepad $profile
-~~~
-
-and write content below
-
-~~~ PowerShell
->import-module Set-AuthProxy
->Set-AuthProxy "Set"
-~~~
-
-and save and close PowerShell_profile.ps1
+>\Your My Document\WindowsPowerShell\\**Modules\Set-PSAuthProxy\Set-AuthProxy.psm1**
 
 ## 4. edit your personal info to Set-PSAuthProxy.psm1
 
@@ -66,6 +61,17 @@ please blank like this below.
 $UserName = ""
 ~~~
 
+## 5. add Set-AuthProxy module to PowerShell_profile.ps1
+
+and write content below
+
+~~~ PowerShell
+>import-module Set-AuthProxy
+>Set-AuthProxy "Set"
+~~~
+
+and save and close PowerShell_profile.ps1
+
 ## 5. restart powershell and activate Set-PSAuthProxy automatically
 
 First time start Set-PSAuthProxy, you don't have password and aes key files.
@@ -74,6 +80,12 @@ First time start Set-PSAuthProxy, you don't have password and aes key files.
 
 You saw dialog below. please enter your password, and enter.
 Create encrypt password file and aes key files.
+
+and if you Set-AuthProxy currentry finished shows message below.
+
+~~~ PowerShell
+> Set Auth Proxy User Environment
+~~~
 
 ----
 
